@@ -16,7 +16,7 @@
 }
 
 .aboutContainer {
-    height: 15rem;
+    height: auto;
     background-image: linear-gradient(transparent, white);
     h1 {
         margin: 2.5rem 0;
@@ -29,5 +29,27 @@
         font-size: 1rem;
         font-weight: 500;
         margin-top: 2rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        img {
+            height: auto;
+            width: 15rem;
+            margin: 1rem 0;
+            align-self: center;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .homeContainer {
+        width: fit-content;
     }
 }
