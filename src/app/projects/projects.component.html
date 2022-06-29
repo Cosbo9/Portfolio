@@ -1,0 +1,22 @@
+<div class="projectsContainer">
+    <h1>
+        My Projects
+    </h1>
+    <div class="cardContainer" *ngFor="let project of projects">
+        <mat-card>
+            <mat-card-title>{{project.title}}</mat-card-title>
+            <mat-card-content>
+                <img [src]="project.image" alt="project image">
+                <h3>{{project.desc}}</h3>
+                <div class="btnGroup">
+                    <button mat-raised-button style="background-color: #5151d8;">
+                        <a target="_blank" [href]="project.site">Visit this site!</a>
+                    </button>
+                    <button mat-raised-button style="background-color: #5151d8;">
+                        <a target="_blank" [href]="project.repo">Visit the repo!</a>
+                    </button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

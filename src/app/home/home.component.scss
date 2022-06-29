@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: auto;
+        height: 20rem;
+        margin: 1rem 6rem;
+        margin-left: 16rem;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin: 0 4rem;
+        align-self: center;
+    }
+}
+
+.aboutContainer {
+    height: 15rem;
+    background-image: linear-gradient(transparent, white);
+    h1 {
+        margin: 2.5rem 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    p {
+        padding: .25rem 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+}
