@@ -21,6 +21,18 @@ export class ProjectsComponent implements OnInit {
     site: 'https://employ-project.herokuapp.com/',
     repo: 'https://github.com/codelabsone/VizTeams-2021-2022'
   },
+  {
+    title: "Youth Coding League landing page",
+    image: "../../assets/YCLhome.png",
+    desc: "Landing page for the Youth Coding League, an orginaztion that focus on tech education for young students.",
+    site: "https://www.youthcodingleague.com/"
+  },
+  {
+    title: "Combine 4",
+    image: "../../assets/Combine4.png",
+    desc: "A connect 4 type game that can be played with other live players. I made this with my class in my code course but was not able to get it live yet.",
+    repo: "https://github.com/Cosbo9/Game-Project"
+  }
 ];
 
   constructor() { }
