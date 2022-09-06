@@ -1,0 +1,22 @@
+.iconList {
+    display: flex;
+    justify-content: flex-end;
+    h3 {
+        align-self: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0rem 2rem;
+        li {
+            height: auto;
+            margin: 0.75rem;
+            img {
+                width: 1.5rem;
+            }
+        }
+    }
+}

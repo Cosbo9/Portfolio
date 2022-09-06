@@ -32,6 +32,13 @@ export class ProjectsComponent implements OnInit {
     image: "../../assets/Combine4.png",
     desc: "A connect 4 type game that can be played with other live players. I made this with my class in my code course but was not able to get it live yet.",
     repo: "https://github.com/Cosbo9/Game-Project"
+  },
+  {
+    title: "My Portfolio",
+    image: "../../assets/portfolio.png",
+    desc: "This site which was built using Angular.",
+    site: "https://caleb-osborn.herokuapp.com",
+    repo: "https://github.com/Cosbo9/portfolio"
   }
 ];
 

@@ -2,6 +2,18 @@
     background-image: linear-gradient(transparent, white);
 }
 
+.header {
+    display: flex;
+    h1 {
+        align-self: flex-start;
+        cursor: pointer;
+        margin: 1.25rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: whitesmoke;
+    }
+}
+
 h1 {
     margin: 2rem 0;
     text-align: center;
