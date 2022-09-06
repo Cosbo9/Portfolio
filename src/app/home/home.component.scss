@@ -1,55 +1,149 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    img {
-        width: auto;
-        height: 20rem;
-        margin: 1rem 6rem;
-        margin-left: 16rem;
-    }
-    h1 {
-        font-weight: 600;
-        font-size: 2.5rem;
-        margin: 0 4rem;
-        align-self: center;
-    }
-}
-
-.aboutContainer {
-    height: auto;
-    background-image: linear-gradient(transparent, white);
-    h1 {
-        margin: 2.5rem 0;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    p {
-        padding: .25rem 2rem;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-top: 2rem;
-    }
-}
-
-@media(max-width: 800px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        img {
+        .header {
+            display: flex;
+            flex-direction: column;
+            background: url("../../assets/landscape2.jpg") bottom no-repeat fixed;
+            height: 40rem;
+            .tag {
+                display: flex;
+                margin-top: 5rem;
+                img {
+                    width: auto;
+                    height: 25rem;
+                    margin: 1rem 6rem;
+                    margin-left: 16rem;
+                }
+                h1 {
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                    margin: 0 4rem;
+                    align-self: center;
+                    color: whitesmoke;
+                }
+            }
+        }
+        
+        .aboutContainer {
             height: auto;
-            width: 15rem;
-            margin: 1rem 0;
-            align-self: center;
+            background-image: linear-gradient(transparent, white);
+            h1 {
+                margin: 2.5rem 0;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            p {
+                padding: .25rem 2rem;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-top: 2rem;
+            }
         }
-        h1 {
-            text-align: center;
+        
+        mat-toolbar {
+            display: flex;
+            justify-content: space-between;
+            background: transparent;
+            h3 {
+                cursor: pointer;
+                margin-left: 1rem;
+                font-size: 1.75rem;
+                font-weight: 600;
+                color: whitesmoke;
+            }
+            .btnGroup {
+                display: flex;
+                h6 {
+                    margin: 1.5rem;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    color: whitesmoke;
+                }
+                .iconList {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            height: auto;
+                            margin: .5rem;
+                            img {
+                                width: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
-    }
-}
-
-@media(max-width: 450px) {
-    .homeContainer {
-        width: fit-content;
-    }
-}
+        
+        .dialog {
+            width: 30rem;
+            h1 {
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+            ul {
+                list-style-type: none;
+            }
+            li {
+                display: flex;
+                margin-left: -2.5rem;
+                img {
+                    width: 2rem;
+                    height: auto;
+                    margin: 0 1rem;
+                }
+                a {
+                    color: blue;
+                }
+            }
+        }
+        
+        @media(max-width: 660px) {
+            .dialog {
+                width: auto;
+            }
+        }
+        
+        @media(max-width: 450px) {
+            mat-toolbar {
+                display: flex;
+                h3 {
+                    cursor: pointer;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                }
+                button {
+                    width: 6rem;
+                    h6 {
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        
+        @media(max-width: 250px) {
+            img {
+                display: none;
+            }
+        }
+        
+        @media(max-width: 800px) {
+            .header {
+                display: flex;
+                flex-direction: column;
+                img {
+                    height: auto;
+                    width: 15rem;
+                    margin: 1rem 0;
+                    align-self: center;
+                }
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+        
+        @media(max-width: 450px) {
+            .homeContainer {
+                width: fit-content;
+            }
+        }
